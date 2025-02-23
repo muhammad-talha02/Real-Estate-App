@@ -33,7 +33,7 @@ const TabIcon = ({
   );
 };
 
-const TabsLayput = () => {
+const TabsLayout = () => {
   return (
     <Tabs
       screenOptions={{
@@ -60,7 +60,7 @@ const TabsLayput = () => {
         options={{
           title: "Search",
           headerShown: false,
-          tabBarIcon: ({focused}) => <TabIcon title="Home" icon={icons.search} focused={focused} />,
+          tabBarIcon: ({focused}) => <TabIcon title="Exlore" icon={icons.search} focused={focused} />,
         }}
       />
       <Tabs.Screen
@@ -68,11 +68,11 @@ const TabsLayput = () => {
         options={{
           title: "Profile",
           headerShown: false,
-          tabBarIcon: ({focused}) => <TabIcon title="Home" icon={icons.person} focused={focused} />,
+          tabBarIcon: ({focused}) => <TabIcon title="Profile" icon={icons.person} focused={focused} />,
         }}
       />
     </Tabs>
   );
 };
 
-export default TabsLayput;
+export default TabsLayout;
