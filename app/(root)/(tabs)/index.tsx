@@ -1,3 +1,4 @@
+import { Card, FeaturedCard } from "@/components/Cards";
 import Search from "@/components/Search";
 import icons from "@/constants/icons";
 import images from "@/constants/images";
@@ -30,6 +31,8 @@ export default function Home() {
           </View>
         </View>
       </View>
+      <FeaturedCard />
+      <Card />
     </SafeAreaView>
   );
 }
