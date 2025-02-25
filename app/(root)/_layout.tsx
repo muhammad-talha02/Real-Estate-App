@@ -13,6 +13,6 @@ export default function AppLayout() {
             </SafeAreaView>
         )
     }
-    // if(!isLoggedIn) return <Redirect href={'/sign-in'}/>
+    if(!isLoggedIn) return <Redirect href={'/sign-in'}/>
     return <Slot />
 }
