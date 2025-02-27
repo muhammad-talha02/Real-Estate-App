@@ -31,7 +31,7 @@ export default function Home() {
     refetch,
   } = useAppwrite({
     fn: getProperties,
-    params: { query: params.query!, filter: params?.filter! },
+    params: { query: params.query!, filter: params?.filter!, limit:10 },
     skip: true,
   });
 
@@ -41,6 +41,7 @@ export default function Home() {
     refetch({
       query: params.query!,
       filter: params?.filter!,
+      limit:10
     });
   }, [params?.filter, params?.filter]);
   return (
